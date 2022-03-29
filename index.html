@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="css/index.html">
+    <link href="icons/css/fontawesome.css" rel="stylesheet">
+    <link href="icons/css/brands.css" rel="stylesheet">
+    <link href="icons/css/solid.css" rel="stylesheet">
+
+
+    <title>Crud 2021</title>
+  </head>
+  <body>
+      <!--INÍCIO NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ETEC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Consulta</a>
+              </li>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Cadastro</a>
+                </li>
+               </ul>     
+            </ul>
+            <form class="d-flex">
+              <button type="button" class="btn btn-dark"> Sair <i class="fas fa-caret-down"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+        <!--FIM NAVBAR-->
+
+      <div class="container-fluid bg-dark text-light p-5">
+          <div class="container bg-dark p-4">
+            <h1 class="display-7">Consulta de alunos</h1>
+            <hr>
+          </div>
+      </div>
+        <!--COMEÇO FILTRO DE PESQUISA-->
+       
+         <div class="container bg-light p-1">
+            <div style="text-align:center">
+              <h5>Pesquisa por aluno</h5>
+            </div>
+            
+          
+             <div class="row g-4 container-fluid">
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="Código" aria-label="Código">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                </div>
+                <div class="col-sm-3">
+                  <button type="button" class="btn btn-dark"></i> <i class="fas fa-search"></i></button>
+                </div>
+              </div>
+        </div>
+
+       <!--FIM FILTRO DE PESQUISA-->
+
+       <!--COMEÇO TABELA-->
+       
+       <div class="container-fluid p-4">
+        <table class="table">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">Código</th>
+              <th scope="col">Nome</th>
+              <th scope="col">E-mail</th>
+              <th scope="col"><button type="button" class="btn btn-success btn-sm">Inserir aluno</button> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">01</th>
+              <td>Mateus Favetta</td>
+              <td>matfavetta@gmail.com</td>
+              <td>
+                  <button type="button" class="btn btn-dark"><i class="fas fa-edit"></i></button>
+                  <button type="button" class="btn btn-dark"><i class="fas fa-user-minus"></i></button>
+            </td>
+            </tr>
+            <tr>
+              <th scope="row">02</th>
+              <td>Julia Barros</td>
+              <td>juliab@hotmail.com</td>
+              <td>
+                  <button type="button" class="btn btn-dark"><i class="fas fa-edit"></i></button>
+                  <button type="button" class="btn btn-dark"><i class="fas fa-user-minus"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">03</th>
+              <td>Eliabe Leme</td>
+              <td>lemeeliabe@gmail.com</td>
+              <td>
+                  <button type="button" class="btn btn-dark"><i   class="fas fa-edit"></i></button>
+                  <button type="button" class="btn btn-dark"><i class="fas fa-user-minus"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--FIM TABELA-->
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link bg-dark" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+            </li>
+            <li class="page-item"><a class="bg-dark text-light page-link" href="#">1</a></li>
+            <li class="page-item"><a class="bg-dark text-light page-link" href="#">2</a></li>
+            <li class="page-item"><a class="bg-dark text-light page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="bg-dark text-light page-link" href="#">Próximo</a>
+            </li>
+          </ul>
+        </nav>
+           
+        </div>
+
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+</html>
